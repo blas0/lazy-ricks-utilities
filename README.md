@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>A set of utilities for lazy ricks</strong><br>
-  You should really be doing most of this manually, but ¯\_(ツ)_/¯
+  You should really be doing most of this manually, but ¯\_(ツ)_/¯<br>
   Simply pick & pull from this repo – if you care to contribute, do so.
 </p>
 
