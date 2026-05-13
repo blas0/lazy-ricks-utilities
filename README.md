@@ -10,16 +10,16 @@
 
 ---
 
-**[lazy-gh](.claude/agents/gh-wrapup.md) (agent)**
+**[gh-wrapup](.claude/agents/gh-wrapup.md) (agent)**
 > [!NOTE]
 > You should be performing your own Git operations, not your agent.<br>
 > Use this if you're multi-tasking, tabbing, harnessing, or ricking.
 
 This agent cleans up local git status. Commit, push, pr, & merge -> cleans stale branches.
 
-① Copy the `gh-wrapup.md` to either `~/.claude/agents` or `$CLAUDE_PROJECT_DIR/.claude/agents`
+① Copy the `.claude/agents/gh-wrapup.md` to either `~/.claude/agents` or `$CLAUDE_PROJECT_DIR/.claude/agents`
 
-② Copy the `gh-wrapup.sh` to either `~/.claude/scripts` or `$CLAUDE_PROJECT_DIR/.claude/scripts`
+② Copy the `.claude/scripts/gh-wrapup.sh` to either `~/.claude/scripts` or `$CLAUDE_PROJECT_DIR/.claude/scripts`
 
 ③ Simply invoke in chat, `@gh-wrapup` – validate the agents work.
 
@@ -29,7 +29,7 @@ This agent cleans up local git status. Commit, push, pr, & merge -> cleans stale
 > [!NOTE]
 > Use this to migrate your agent/conversation session from one context window to another.
 
-① Copy the `chat-migrate/SKILL.md` to either `~/.claude/skills` or `$CLAUDE_PROJECT_DIR/.claude/skills`
+① Copy the `.claude/skills/chat-migrate/SKILL.md` to either `~/.claude/skills` or `$CLAUDE_PROJECT_DIR/.claude/skills`
 
 ② Simply invoke in chat after a long-running session, `/chat-migrate` – copy the response.
 
@@ -42,7 +42,7 @@ This agent cleans up local git status. Commit, push, pr, & merge -> cleans stale
 > The other goal building prompts/skills are TOO sweaty.<br>
 > Better to use this skill during a session of writing/modifying code.
 
-① Copy the `build-goal/SKILL.md` to either `~/.claude/skills` or `$CLAUDE_PROJECT_DIR/.claude/skills`
+① Copy the `.claude/skills/build-goal/SKILL.md` to either `~/.claude/skills` or `$CLAUDE_PROJECT_DIR/.claude/skills`
 
 ② Simply invoke in chat after a long-running session, `/build-goal` – answer the questions. 
 
