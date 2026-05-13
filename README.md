@@ -40,7 +40,6 @@ This agent cleans up local git status. Commit, push, pr, & merge -> cleans stale
 > Use this to parlay your brain into a goal for the "new" `/goal` command.<br>
 > I made this because sometimes you just need a semi-more-than-average prompt.<br>
 > The other goal building prompts/skills are TOO sweaty.<br>
-> Better to use this skill during a session of writing/modifying code.
 
 ① Copy the `.claude/skills/build-goal/SKILL.md` to either `~/.claude/skills` or `$CLAUDE_PROJECT_DIR/.claude/skills`
 
