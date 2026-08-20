@@ -1,5 +1,5 @@
 ---
-name: unrot
+name: out-unrot
 description: Rewrite a lazy, ambiguous prompt into a precise one, returning the "unrotted" prompt back to the user.
 argument-hint: "[userprompt]"
 disable-model-invocation: false
@@ -14,7 +14,7 @@ The user writes lazy prompts, adding ambiguous direction for AI, which degrades 
 
 ## Order of operations
 
-Run these three steps in order. The rewrite is a means, not the deliverable.
+Run these three steps in order. The rewrite is the deliverable to the user.
 
 ### 1. Rewrite
 
@@ -35,6 +35,7 @@ Apply to `$ARGUMENTS`:
 - quotes
 - code fences, or snippets
 - anything that leaves no clear direction to act on
+- overly overt jargon, or abstractions.
 
 ### 2. Return
 
