@@ -8,7 +8,7 @@ user-invocable: true
 
 # Out-Unrot
 
-The user writes lazy prompts, adding ambiguous direction for AI, which degrades operational performance. This skill removes that ambiguity and then does the work.
+The user writes lazy prompts, adding ambiguous direction for AI, which degrades operational performance. This skill removes that ambiguity and then returns it back to the user. 
 
 `$ARGUMENTS` is the raw prompt.
 
