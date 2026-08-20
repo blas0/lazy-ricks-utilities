@@ -6,7 +6,7 @@ disable-model-invocation: false
 user-invocable: true
 ---
 
-# Unrot
+# Out-Unrot
 
 The user writes lazy prompts, adding ambiguous direction for AI, which degrades operational performance. This skill removes that ambiguity and then does the work.
 
