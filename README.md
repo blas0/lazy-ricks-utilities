@@ -1,6 +1,8 @@
 # lazy-ricks set of utilities
 
-![Screenshot](pics/ricking.png)
+<div align=center>
+<img src="pics/ricking.png" alt="Screenshot" width="50%">
+</div>
 
 <p align="center">
   <strong>A set of utilities for lazy ricks</strong><br>
@@ -10,40 +12,30 @@
 
 ---
 
-**[gh-wrapup](.claude/agents/gh-wrapup.md) (agent)**
-> [!NOTE]
-> You should be performing your own Git operations, not your agent.<br>
-> Use this if you're multi-tasking, tabbing, harnessing, or ricking.
+![Static Badge](https://img.shields.io/badge/Skills-blue)
 
-This agent cleans up local git status. Commit, push, pr, & merge -> cleans stale branches.
+> **Unrot**
+>
+> The user writes lazy prompts, adding ambiguous direction for AI, which degrades operational performance. This skill removes that ambiguity and then does the work.
 
-① Copy the `.claude/agents/gh-wrapup.md` to either `~/.claude/agents` or `$CLAUDE_PROJECT_DIR/.claude/agents`
+> **Out-Unrot**
+>
+> The user writes lazy prompts, adding ambiguous direction for AI, which degrades operational performance. This skill removes that ambiguity and then returns it back to the user.
 
-② Copy the `.claude/scripts/gh-wrapup.sh` to either `~/.claude/scripts` or `$CLAUDE_PROJECT_DIR/.claude/scripts`
+> **Gitwrap**
+>
+> Stash unfinished work, sync the feature branch with its remote base, restore the work. One repository, no lost changes.
 
-③ Simply invoke in chat, `@gh-wrapup` – validate the agents work.
+> **Chat-Migrate**
+>
+> Migrate context of a projects session to the user for their own free will.
 
----
+> **Fable-Advisor**
+>
+> Invokes a subagent/child-agent that advises the parent/acting agent to ensure the implementation, or proposal is the best case scenario.
 
-**[chat-migrate](.claude/skills/chat-migrate.md) (skill)**
-> [!NOTE]
-> Use this to migrate your agent/conversation session from one context window to another.
+![Static Badge](https://img.shields.io/badge/Output%20Styles-red)
 
-① Copy the `.claude/skills/chat-migrate/SKILL.md` to either `~/.claude/skills` or `$CLAUDE_PROJECT_DIR/.claude/skills`
-
-② Simply invoke in chat after a long-running session, `/chat-migrate` – copy the response.
-
----
-
-**[build-goal](.claude/skills/build-goal.md) (skill)**
-> [!NOTE]
-> Use this to parlay your brain into a goal for the "new" `/goal` command.<br>
-> I made this because sometimes you just need a semi-more-than-average prompt.<br>
-> The other goal building prompts/skills are TOO sweaty.<br>
-
-① Copy the `.claude/skills/build-goal/SKILL.md` to either `~/.claude/skills` or `$CLAUDE_PROJECT_DIR/.claude/skills`
-
-② Simply invoke in chat after a long-running session, `/build-goal` – answer the questions. 
-
----
-
+> **Lucidity**
+>
+> Clear, lucid, and unambiguous output style for human reading.
