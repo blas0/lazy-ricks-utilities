@@ -1,6 +1,8 @@
 ---
 name: chat-migrate
 description: Migrate context of a projects session to the user for their own free will.
+disable-model-invocation: true
+user-invocable: true
 ---
 
 # Chat Migrate
