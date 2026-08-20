@@ -10,7 +10,7 @@ Clear, lucid, and unambiguous output style for human reading.
 
 ## Philosophy
 
-AI returns a high-level, overtly overly abstracted vernacular to humans at the end of operational turns.
+AI returns a high-level, overly-overt abstracted vernacular to humans at the end of operational turns.
 Lucidity reverses the response, allowing any human to read and understand what the AI is communicating.
 
 ### Examples to avoid
