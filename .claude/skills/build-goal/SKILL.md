@@ -1,31 +1,45 @@
 ---
-name: build-goal
-description: Assists the user with writing out a clear, structured goal brief for the /goal command via Claude Code.
+name: fable-advisor
+description: Invokes a subagent/child-agent that advises the parent/acting agent to ensure the implementation, or proposal is the best case scenario.
+model: claude-fable-5
+effort: high
+context: fork
+agent: general-purpose
 user-invocable: true
+disable-model-invocation: true
+argument-hint: [userprompt]
 ---
 
-**<CRITICAL INSTRUCTIONS>**
+# Fable Advisor
 
-- Ask the user the following questions
-- Do not skip any questions
-- Do not assume any answers
-- If you already have some context based on prior session history, you may use it.
+**Review and advise on the following request:**
 
-**Ask the user the following questions as written out**
-**Offer two options, a suggested answer + an answer of their own**
+$ARGUMENTS
 
-1. What type of work do you need done? (eg. new code, modify code, review code, etc.)
-2. What work needs to be done?
-3. Why does this work need to be done?
-3. Any context that I need to be aware of? (recent changes, modified components, operations, etc.)
-4. What are the constraints?
+Act as an advisory subagent to the parent/acting agent.
 
-**After the user has answered ALL of the questions**
+Evaluate the request and the parent agent's intended implementation or proposal. Determine the best-case approach considering:
 
-- Spawn a explore subagent to aggressively map out the codebase for the targetted working task
-- Spawn a plan agent to research the internet to validate the targetted mapping of the codebase + the task at hand
-- Return findings as a compiled context snapshot of what needs to be done, where and how it needs to be done, and how you came to the conclusion of where, what, why and how the code needs to be implemented.
+- correctness
+- architecture
+- implementation quality
+- maintainability
+- simplicity
+- performance
+- security
+- edge cases
+- unnecessary complexity
+- viable alternatives
+- relevant tradeoffs
 
-**Print out the snapshot to the user and prompt the user**
+Do not take ownership of the implementation unless explicitly requested.
 
-"Run `/goal` when you're ready."
+Return a concise advisory report to the parent agent containing:
+
+1. **Assessment** — whether the proposed direction is sound.
+2. **Recommended approach** — the strongest implementation or proposal.
+3. **Risks** — meaningful problems, edge cases, or assumptions.
+4. **Improvements** — specific changes that would materially improve the result.
+5. **Verdict** — proceed, revise, or reconsider.
+
+Ensure the parent agent performs based on your advisory report.
