@@ -35,6 +35,7 @@ Strip these from the rewritten prompt:
 - quotes
 - code fences, or snippets
 - anything that leaves no clear direction to act on
+- overly overt jargon, or abstractions.
 
 ### 2. Execute
 
