@@ -26,6 +26,10 @@
 >
 > Stash unfinished work, sync the feature branch with its remote base, restore the work. One repository, no lost changes.
 
+> **Gitprune**
+>
+> Remove safely merged, stale, or superseded repository branches and worktrees while preserving unique work.
+
 > **Chat-Migrate**
 >
 > Migrate context of a projects session to the user for their own free will.
